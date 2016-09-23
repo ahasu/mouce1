@@ -1,4 +1,11 @@
 ﻿*.d
 *.x
 *.map
-makefile
+makefile.init
+custom.bat
+*.mk
+*.tmp
+*.datas
+.HardwareDebuglinker
+.Debuglinker
+
