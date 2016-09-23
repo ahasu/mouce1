@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="%com.renesas.cdt.shc.debug.win32.configuration.Id.1340896940">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="%com.renesas.cdt.shc.debug.win32.configuration.Id.1340896940" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.renesas.cdt.core.KPITGCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.renesas.cdt.core.KPITGASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.renesas.cdt.core.KPITMakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.renesas.cdt.core.KPITGLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.renesas.cdt.core.CCRXErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="mouce1" buildArtefactType="com.renesas.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=com.renesas.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf *.sni *.dbg *.lst *.lis *.lpp *.map *.x *.lbp src/*.src src/*.p src/*.pp *.bls *.libelf *.lbk *.fsy" description="Debug using GDB simulator" id="%com.renesas.cdt.shc.debug.win32.configuration.Id.1340896940" name="Debug" parent="%com.renesas.cdt.shc.debug.win32.configuration.Id">
+					<folderInfo id="%com.renesas.cdt.shc.debug.win32.configuration.Id.1340896940." name="/" resourcePath="">
+						<toolChain id="com.renesas.cdt.shc.debug.win32.toolChain.Id.1883891975" name="Renesas SHC Toolchain" superClass="com.renesas.cdt.shc.debug.win32.toolChain.Id">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.PE" id="com.renesas.cdt.shc.debug.win32.targetPlatform.Id.481348351" isAbstract="false" osList="win32" superClass="com.renesas.cdt.shc.debug.win32.targetPlatform.Id"/>
+							<builder buildPath="${workspace_loc:/mouce1}/Debug" id="com.renesas.cdt.shc.debug.win32.builder.Id.1133607060" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="SHC Make Builder" superClass="com.renesas.cdt.shc.debug.win32.builder.Id"/>
+							<tool id="com.renesas.cdt.shc.debug.win32.tool.compiler.Id.1245946755" name="Compiler" superClass="com.renesas.cdt.shc.debug.win32.tool.compiler.Id">
+								<option id="com.renesas.cdt.renesas.Compiler.option.defines.880946142" name="定義" superClass="com.renesas.cdt.renesas.Compiler.option.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_SH"/>
+									<listOptionValue builtIn="false" value="SIM_DEBUG"/>
+								</option>
+								<option id="com.renesas.cdt.shc.Debug.Compiler.option.cpu.1836015226" name="CPU" superClass="com.renesas.cdt.shc.Debug.Compiler.option.cpu" value="com.renesas.cdt.shc.Debug.Compiler.option.cpu.sh2" valueType="enumerated"/>
+								<option id="com.renesas.cdt.shc.Debug.Compiler.option.endian.1820306213" name="Endian" superClass="com.renesas.cdt.shc.Debug.Compiler.option.endian" value="com.renesas.cdt.shc.Debug.Compiler.option.endian.big" valueType="enumerated"/>
+								<option id="com.renesas.cdt.shc.Debug.Compiler.option.roundTo.764448646" name="Round to" superClass="com.renesas.cdt.shc.Debug.Compiler.option.roundTo" value="com.renesas.cdt.shc.Debug.Compiler.option.roundTo.zero" valueType="enumerated"/>
+								<option id="com.renesas.cdt.shc.Debug.Compiler.option.fpu.2102507072" name="FPU" superClass="com.renesas.cdt.shc.Debug.Compiler.option.fpu" value="com.renesas.cdt.shc.Debug.Compiler.option.fpu.mixed" valueType="enumerated"/>
+								<option id="com.renesas.cdt.shc.Debug.Compiler.option.division.878170795" name="Division" superClass="com.renesas.cdt.shc.Debug.Compiler.option.division" value="com.renesas.cdt.shc.Debug.Compiler.option.division.cpu" valueType="enumerated"/>
+								<option id="com.renesas.cdt.renesas.Compiler.option.device.3011809" name="Device" superClass="com.renesas.cdt.renesas.Compiler.option.device" value="SH7125" valueType="string"/>
+								<option id="com.renesas.cdt.renesas.Compiler.option.incFileDirectories.613102147" name="インクルード・ファイル・ディレクトリー" superClass="com.renesas.cdt.renesas.Compiler.option.incFileDirectories" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${TCINSTALL}/include&quot;"/>
+								</option>
+								<option id="com.renesas.cdt.renesas.Compiler.option.CPUSeries.1438315808" name="CPU シリーズ" superClass="com.renesas.cdt.renesas.Compiler.option.CPUSeries" value="SH7125" valueType="string"/>
+								<option id="com.renesas.cdt.renesas.Compiler.option.UserDef.1444498054" name="ユーザー定義オプション" superClass="com.renesas.cdt.renesas.Compiler.option.UserDef" valueType="stringList">
+									<listOptionValue builtIn="false" value="-nologo"/>
+									<listOptionValue builtIn="false" value="-chgincpath"/>
+									<listOptionValue builtIn="false" value="-errorpath"/>
+								</option>
+								<inputType id="%Base.Compiler.Shc.C.Input.Id.891354958" name="C 入力" superClass="%Base.Compiler.Shc.C.Input.Id"/>
+								<inputType id="%Base.Compiler.Shc.C.Input1.Id.282245612" name="C++ 入力" superClass="%Base.Compiler.Shc.C.Input1.Id"/>
+							</tool>
+							<tool id="com.renesas.cdt.shc.debug.win32.tool.assembler.Id.1370806462" name="Assembler" superClass="com.renesas.cdt.shc.debug.win32.tool.assembler.Id">
+								<option id="com.renesas.cdt.shc.Debug.Assembler.option.cpu.1679671353" name="CPU" superClass="com.renesas.cdt.shc.Debug.Assembler.option.cpu" value="com.renesas.cdt.shc.Debug.Assembler.option.cpu.sh2" valueType="enumerated"/>
+								<option id="com.renesas.cdt.shc.Debug.Assembler.option.endian.1981333514" name="Endian" superClass="com.renesas.cdt.shc.Debug.Assembler.option.endian" value="com.renesas.cdt.shc.Debug.Assembler.option.endian.big" valueType="enumerated"/>
+								<option id="com.renesas.cdt.renesas.Assembler.option.userDefine.743020724" name="ユーザー定義オプション" superClass="com.renesas.cdt.renesas.Assembler.option.userDefine" valueType="stringList">
+									<listOptionValue builtIn="false" value="-nologo"/>
+									<listOptionValue builtIn="false" value="-chgincpath"/>
+									<listOptionValue builtIn="false" value="-errorpath"/>
+								</option>
+								<inputType id="%Base.Assembler.shcInputType.Id.1272107914" name="アセンブラー入力タイプ" superClass="%Base.Assembler.shcInputType.Id"/>
+							</tool>
+							<tool id="com.renesas.cdt.shc.debug.win32.tool.linker.Id.1760485518" name="Linker" superClass="com.renesas.cdt.shc.debug.win32.tool.linker.Id">
+								<option id="com.renesas.cdt.renesas.Linker.option.linkOrderList.816810845" name="" superClass="com.renesas.cdt.renesas.Linker.option.linkOrderList" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;.\src\dbsct.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\init_stack.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\interrupt_handlers.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\mouce1.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\reset_program.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\vector_table.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\mouce1.lib&quot;"/>
+								</option>
+								<option id="com.renesas.cdt.renesas.Linker.option.rom.620992739" name="ROMからRAMへマップするセクション" superClass="com.renesas.cdt.renesas.Linker.option.rom" valueType="stringList">
+									<listOptionValue builtIn="false" value="D=R"/>
+								</option>
+								<option id="com.renesas.cdt.renesas.Linker.option.typeOfOutputFileOption.1643758234" name="出力ファイル・タイプ:" superClass="com.renesas.cdt.renesas.Linker.option.typeOfOutputFileOption" value="com.renesas.cdt.renesas.Linker.option.typeOfOutputFileOption.stypeViaAbsolute" valueType="enumerated"/>
+							</tool>
+							<tool id="com.renesas.cdt.shc.debug.win32.tool.libgen.Id.23933292" name="Standard Library" superClass="com.renesas.cdt.shc.debug.win32.tool.libgen.Id">
+								<option id="com.renesas.cdt.shc.Debug.StandardLibrary.option.cpu.1449217012" name="CPU" superClass="com.renesas.cdt.shc.Debug.StandardLibrary.option.cpu" value="com.renesas.cdt.shc.Debug.StandardLibrary.option.cpu.sh2" valueType="enumerated"/>
+								<option id="com.renesas.cdt.shc.Debug.StandardLibrary.option.endian.2101136071" name="Endian" superClass="com.renesas.cdt.shc.Debug.StandardLibrary.option.endian" value="com.renesas.cdt.shc.Debug.StandardLibrary.option.endian.big" valueType="enumerated"/>
+								<option id="com.renesas.cdt.renesas.StandardLibrary.option.stdarg.1814141676" name="stdarg.h: 可変個の実引数アクセス用ライブラリー" superClass="com.renesas.cdt.renesas.StandardLibrary.option.stdarg" value="true" valueType="boolean"/>
+								<option id="com.renesas.cdt.renesas.StandardLibrary.option.mode.1564769534" name="モード" superClass="com.renesas.cdt.renesas.StandardLibrary.option.mode" value="com.renesas.cdt.renesas.StandardLibrary.option.buildOnlyWhenOptionsChanged" valueType="enumerated"/>
+							</tool>
+							<tool id="com.renesas.cdt.shc.debug.win32.tool.convertor.Id.629590000" name="Converter" superClass="com.renesas.cdt.shc.debug.win32.tool.convertor.Id"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="%com.renesas.cdt.shc.hardwaredebug.win32.configuration.Id.1989318215">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="%com.renesas.cdt.shc.hardwaredebug.win32.configuration.Id.1989318215" moduleId="org.eclipse.cdt.core.settings" name="HardwareDebug">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.renesas.cdt.core.KPITGCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.renesas.cdt.core.KPITGASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.renesas.cdt.core.KPITMakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.renesas.cdt.core.KPITGLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.renesas.cdt.core.CCRXErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="mot" artifactName="mouce1" buildArtefactType="com.renesas.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=com.renesas.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf *.sni *.dbg *.lst *.lis *.lpp *.map *.x *.lbp src/*.src src/*.p src/*.pp *.bls *.libelf *.lbk *.fsy" description="Debug on hardware" errorParsers="com.renesas.cdt.core.KPITGCCErrorParser;com.renesas.cdt.core.KPITMakeErrorParser;com.renesas.cdt.core.KPITGASErrorParser;com.renesas.cdt.core.KPITGLDErrorParser;com.renesas.cdt.core.CCRXErrorParser" id="%com.renesas.cdt.shc.hardwaredebug.win32.configuration.Id.1989318215" name="HardwareDebug" parent="%com.renesas.cdt.shc.hardwaredebug.win32.configuration.Id">
+					<folderInfo id="%com.renesas.cdt.shc.hardwaredebug.win32.configuration.Id.1989318215." name="/" resourcePath="">
+						<toolChain id="com.renesas.cdt.shc.hardwaredebug.win32.toolChain.Id.1675271234" name="Renesas SHC Toolchain" superClass="com.renesas.cdt.shc.hardwaredebug.win32.toolChain.Id" targetTool="com.renesas.cdt.shc.hardwaredebug.win32.tool.convertor.Id">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.PE" id="com.renesas.cdt.shc.hardwaredebug.win32.targetPlatform.Id.1393675433" isAbstract="false" osList="win32" superClass="com.renesas.cdt.shc.hardwaredebug.win32.targetPlatform.Id"/>
+							<builder buildPath="${workspace_loc:/mouce1}/HardwareDebug" id="com.renesas.cdt.shc.hardwaredebug.win32.builder.Id.141748529" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="SHC Make Builder" superClass="com.renesas.cdt.shc.hardwaredebug.win32.builder.Id"/>
+							<tool id="com.renesas.cdt.shc.hardwaredebug.win32.tool.compiler.Id.1060174245" name="Compiler" superClass="com.renesas.cdt.shc.hardwaredebug.win32.tool.compiler.Id">
+								<option id="com.renesas.cdt.renesas.Compiler.option.defines.1936373744" name="定義" superClass="com.renesas.cdt.renesas.Compiler.option.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_SH"/>
+								</option>
+								<option id="com.renesas.cdt.shc.HardwareDebug.Compiler.option.cpu.1302724674" name="CPU" superClass="com.renesas.cdt.shc.HardwareDebug.Compiler.option.cpu" value="com.renesas.cdt.shc.HardwareDebug.Compiler.option.cpu.sh2" valueType="enumerated"/>
+								<option id="com.renesas.cdt.shc.HardwareDebug.Compiler.option.endian.1249245130" name="Endian" superClass="com.renesas.cdt.shc.HardwareDebug.Compiler.option.endian" value="com.renesas.cdt.shc.HardwareDebug.Compiler.option.endian.big" valueType="enumerated"/>
+								<option id="com.renesas.cdt.shc.HardwareDebug.Compiler.option.roundTo.99926374" name="Round to" superClass="com.renesas.cdt.shc.HardwareDebug.Compiler.option.roundTo" value="Zero" valueType="enumerated"/>
+								<option id="com.renesas.cdt.shc.HardwareDebug.Compiler.option.fpu.1558252888" name="FPU" superClass="com.renesas.cdt.shc.HardwareDebug.Compiler.option.fpu" value="Mixed" valueType="enumerated"/>
+								<option id="com.renesas.cdt.shc.HardwareDebug.Compiler.option.division.2041563606" name="Division" superClass="com.renesas.cdt.shc.HardwareDebug.Compiler.option.division" value="com.renesas.cdt.shc.HardwareDebug.Compiler.option.division.cpu" valueType="enumerated"/>
+								<option id="com.renesas.cdt.renesas.Compiler.option.device.1177957021" name="Device" superClass="com.renesas.cdt.renesas.Compiler.option.device" value="SH7125" valueType="string"/>
+								<option id="com.renesas.cdt.renesas.Compiler.option.incFileDirectories.277998197" name="インクルード・ファイル・ディレクトリー" superClass="com.renesas.cdt.renesas.Compiler.option.incFileDirectories" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${TCINSTALL}/include&quot;"/>
+								</option>
+								<option id="com.renesas.cdt.renesas.Compiler.option.CPUSeries.1845707885" name="CPU シリーズ" superClass="com.renesas.cdt.renesas.Compiler.option.CPUSeries" value="SH7125" valueType="string"/>
+								<option id="com.renesas.cdt.renesas.Compiler.option.UserDef.938998564" name="ユーザー定義オプション" superClass="com.renesas.cdt.renesas.Compiler.option.UserDef" valueType="stringList">
+									<listOptionValue builtIn="false" value="-nologo"/>
+									<listOptionValue builtIn="false" value="-chgincpath"/>
+									<listOptionValue builtIn="false" value="-errorpath"/>
+								</option>
+								<option id="com.renesas.cdt.renesas.Compiler.option.interModuleOptimization.111039403" superClass="com.renesas.cdt.renesas.Compiler.option.interModuleOptimization" value="false" valueType="boolean"/>
+								<option id="com.renesas.cdt.shc.HardwareDebug.Compiler.option.optimize.567901012" superClass="com.renesas.cdt.shc.HardwareDebug.Compiler.option.optimize" value="com.renesas.cdt.shc.HardwareDebug.Compiler.option.optimize.off" valueType="enumerated"/>
+								<inputType id="%Base.Compiler.Shc.C.Input.Id.1716435318" name="C 入力" superClass="%Base.Compiler.Shc.C.Input.Id"/>
+								<inputType id="%Base.Compiler.Shc.C.Input1.Id.1169332610" name="C++ 入力" superClass="%Base.Compiler.Shc.C.Input1.Id"/>
+							</tool>
+							<tool id="com.renesas.cdt.shc.hardwaredebug.win32.tool.assembler.Id.2091670417" name="Assembler" superClass="com.renesas.cdt.shc.hardwaredebug.win32.tool.assembler.Id">
+								<option id="com.renesas.cdt.shc.HardwareDebug.Assembler.option.cpu.704832524" name="CPU" superClass="com.renesas.cdt.shc.HardwareDebug.Assembler.option.cpu" value="com.renesas.cdt.shc.HardwareDebug.Assembler.option.cpu.sh2" valueType="enumerated"/>
+								<option id="com.renesas.cdt.shc.HardwareDebug.Assembler.option.endian.825812099" name="Endian" superClass="com.renesas.cdt.shc.HardwareDebug.Assembler.option.endian" value="com.renesas.cdt.shc.HardwareDebug.Assembler.option.endian.big" valueType="enumerated"/>
+								<option id="com.renesas.cdt.renesas.Assembler.option.userDefine.784116341" name="ユーザー定義オプション" superClass="com.renesas.cdt.renesas.Assembler.option.userDefine" valueType="stringList">
+									<listOptionValue builtIn="false" value="-nologo"/>
+									<listOptionValue builtIn="false" value="-chgincpath"/>
+									<listOptionValue builtIn="false" value="-errorpath"/>
+								</option>
+								<inputType id="%Base.Assembler.shcInputType.Id.1997041769" name="アセンブラー入力タイプ" superClass="%Base.Assembler.shcInputType.Id"/>
+							</tool>
+							<tool id="com.renesas.cdt.shc.hardwaredebug.win32.tool.linker.Id.1497500953" name="Linker" superClass="com.renesas.cdt.shc.hardwaredebug.win32.tool.linker.Id">
+								<option id="com.renesas.cdt.renesas.Linker.option.linkOrderList.499916233" name="" superClass="com.renesas.cdt.renesas.Linker.option.linkOrderList" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;.\src\dbsct.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\init_stack.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\interrupt_handlers.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\mouce1.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\reset_program.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\vector_table.obj&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\mouce1.lib&quot;"/>
+								</option>
+								<option id="com.renesas.cdt.renesas.Linker.option.rom.456653635" name="ROMからRAMへマップするセクション" superClass="com.renesas.cdt.renesas.Linker.option.rom" valueType="stringList">
+									<listOptionValue builtIn="false" value="D=R"/>
+								</option>
+								<option id="com.renesas.cdt.renesas.Linker.option.typeOfOutputFileOption.1290118701" name="出力ファイル・タイプ:" superClass="com.renesas.cdt.renesas.Linker.option.typeOfOutputFileOption" value="com.renesas.cdt.renesas.Linker.option.typeOfOutputFileOption.stypeViaAbsolute" valueType="enumerated"/>
+								<option id="com.renesas.cdt.renesas.Linker.option.linkOrder.449730663" name="%option.name.179" superClass="com.renesas.cdt.renesas.Linker.option.linkOrder" valueType="stringList"/>
+							</tool>
+							<tool id="com.renesas.cdt.shc.hardwaredebug.win32.tool.libgen.Id.443220229" name="Standard Library" superClass="com.renesas.cdt.shc.hardwaredebug.win32.tool.libgen.Id">
+								<option id="com.renesas.cdt.shc.HardwareDebug.StandardLibrary.option.cpu.292764519" name="CPU" superClass="com.renesas.cdt.shc.HardwareDebug.StandardLibrary.option.cpu" value="com.renesas.cdt.shc.HardwareDebug.StandardLibrary.option.cpu.sh2" valueType="enumerated"/>
+								<option id="com.renesas.cdt.shc.HardwareDebug.StandardLibrary.option.endian.1369239829" name="Endian" superClass="com.renesas.cdt.shc.HardwareDebug.StandardLibrary.option.endian" value="com.renesas.cdt.shc.HardwareDebug.StandardLibrary.option.endian.big" valueType="enumerated"/>
+								<option id="com.renesas.cdt.renesas.StandardLibrary.option.stdarg.1605459982" name="stdarg.h: 可変個の実引数アクセス用ライブラリー" superClass="com.renesas.cdt.renesas.StandardLibrary.option.stdarg" value="true" valueType="boolean"/>
+								<option id="com.renesas.cdt.renesas.StandardLibrary.option.mode.960041691" name="モード" superClass="com.renesas.cdt.renesas.StandardLibrary.option.mode" value="com.renesas.cdt.renesas.StandardLibrary.option.buildOnlyWhenOptionsChanged" valueType="enumerated"/>
+							</tool>
+							<tool id="com.renesas.cdt.shc.hardwaredebug.win32.tool.convertor.Id.518967145" name="Converter" superClass="com.renesas.cdt.shc.hardwaredebug.win32.tool.convertor.Id"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="mouce1.com.renesas.cdt.shc.projectType.win32.Id.884924946" name="Executable (Renesas)" projectType="com.renesas.cdt.shc.projectType.win32.Id"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="HardwareDebug">
+			<resource resourceType="PROJECT" workspacePath="/mouce1"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/mouce1"/>
+		</configuration>
+	</storageModule>
+</cproject>
