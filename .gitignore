@@ -1,4 +1,5 @@
-﻿*.d
+﻿
+*.d
 *.x
 *.map
 makefile.init
@@ -8,4 +9,4 @@ custom.bat
 *.datas
 .HardwareDebuglinker
 .Debuglinker
-
+makefile
