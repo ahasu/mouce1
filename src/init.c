@@ -76,7 +76,10 @@ void initAD(void) {//AD変換の設定
 	AD1.ADCSR.BIT.CKSL = 0;
 	AD1.ADCSR.BIT.ADIE = 0;
 	AD1.ADCSR.BIT.ADM = 0;
-	AD1.ADCSR.BIT.CH = 0;
+	AD1.ADCSR.BIT.CH = 0;	//AN4 CL
+	AD1.ADCSR.BIT.CH = 1;	//AN5 CR
+	AD1.ADCSR.BIT.CH = 2;	//AN6 L
+	AD1.ADCSR.BIT.CH = 3;	//AN7 R
 }
 
 void init(){
