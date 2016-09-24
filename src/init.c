@@ -1,6 +1,6 @@
 #include "iodefine.h"
 #include "init.h"
-volatile int cnt;
+
 
 /*
 
@@ -19,7 +19,7 @@ void init_io(){
 
 }
 */
-
+/*
 void initMTU(void){
 	STB.CR4.BIT._MTU2 = 0;      //MTUスタンバイモード解除
 
@@ -38,6 +38,8 @@ void initMTU(void){
 
 	MTU2.TSTR.BIT.CST0 = 1;     //カウントスタート
 }
+*/
+
 
 void initCMT(void)	//CMT割込の設定
 {
@@ -53,22 +55,29 @@ void initCMT(void)	//CMT割込の設定
 	CMT0.CMCOR          = 5000;  //割り込み周期
 	INTC.IPRJ.BIT._CMT0 = 0xf;//割り込み優先度(15)
 }
-
-void delay(int time){
+/*
+void delay(int time){//mouce1に書いたる
 	cnt = 0;
 	while(cnt<time);
 }
-
-void interrupt_cmt0(){
+*/
+/*
+void interrupt_cmt0(){//mouce1に書いたる
 	CMT0.CMCSR.BIT.CMF = 0;
 	cnt ++;
 }
+*/
 
-void init_mcu(){
-	initCMU();
-	interrupt_cmt0();
+void initAD(void) {//AD変換の設定
+	STB.CR4.BIT._AD1 = 0;
+	AD1.ADCR.BIT.ADST = 0;
+	AD1.ADCSR.BIT.ADCS = 0;
+	AD1.ADCSR.BIT.TRGE = 0;
+	AD1.ADCSR.BIT.CKSL = 0;
+	AD1.ADCSR.BIT.ADIE = 0;
+	AD1.ADCSR.BIT.ADM = 0;
+	AD1.ADCSR.BIT.CH = 0;
 }
-
 
 void init(){
 	PFC.PEIORL.BIT.B0	= 1;//R_CW/CCW
@@ -76,7 +85,7 @@ void init(){
 	PFC.PEIORL.BIT.B2	= 1;//MOT_RES
 	PFC.PEIORL.BIT.B4	= 1;//L_CW/CCW
 	PFC.PEIORL.BIT.B5	= 1;//L_Clock
-//	PFC.PEIORL.BIT.B8	= 1;//MOT_EN
+	PFC.PEIORL.BIT.B8	= 1;//MOT_EN
 	PFC.PEIORL.BIT.B10	= 0;//SW_L
 	PFC.PEIORL.BIT.B11	= 0;//SW_R
 

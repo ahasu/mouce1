@@ -15,6 +15,8 @@
 /************************************************************************/
 /*      SH7125 Series Include File                          Ver 2.1     */
 /************************************************************************/
+#pragma once//二重include防止
+
 struct st_sci {                                         /* struct SCI   */
               union {                                   /* SCSMR        */
                     unsigned char BYTE;                 /*  Byte Access */
