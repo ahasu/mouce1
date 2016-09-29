@@ -1,6 +1,10 @@
 #include "iodefine.h"
 #include "init.h"
 
+int SEN_CL;
+int SEN_CR;
+int SEN_L;
+int SEN_R;
 
 /*
 
@@ -68,14 +72,34 @@ void interrupt_cmt0(){//mouce1に書いたる
 }
 */
 
+
+void ADC(void){
+	STB.CR4.BIT._AD1 = 0;//スリープ解除
+	STB.CR4.BIT._AD0 = 0;//
+	AD1.ADCR.BIT.ADST = 0;//ADC停止
+	//AD1.ADCSR.BIT.CH = 0;
+	//AD1.ADCSR.BIT.CH = 1;
+	AD1.ADCSR.BIT.CH = 2;
+	//AD1.ADCSR.BIT.CH = 3;
+	AD1.ADCR.BIT.ADST = 1;//ADC実効
+	while (AD1.ADCSR.BIT.ADF == 0);
+	AD1.ADCSR.BIT.ADF = 0;
+
+	SEN_CL = AD1.ADDR4>>6;	//センサ中央左出力
+	SEN_CR = AD1.ADDR5>>6;	//センサ中央右出力
+	SEN_L = AD1.ADDR6>>6;	//センサ左出力
+	SEN_R = AD1.ADDR7>>6;	//センサ右出力
+}
+
 void initAD(void) {//AD変換の設定
-	STB.CR4.BIT._AD1 = 0;
-	AD1.ADCR.BIT.ADST = 0;
-	AD1.ADCSR.BIT.ADCS = 0;
-	AD1.ADCSR.BIT.TRGE = 0;
-	AD1.ADCSR.BIT.CKSL = 0;
-	AD1.ADCSR.BIT.ADIE = 0;
-	AD1.ADCSR.BIT.ADM = 0;
+	STB.CR4.BIT._AD1 = 0;	//スリープ解除
+	STB.CR4.BIT._AD0 = 0;	//スリープ解除
+	AD1.ADCR.BIT.ADST = 0;	//ADC停止
+	AD1.ADCSR.BIT.ADCS = 0;	//サイクルスキャンしない
+	AD1.ADCSR.BIT.TRGE = 0;	//トリガイネーブル無効
+	AD1.ADCSR.BIT.CKSL = 0;	//
+	AD1.ADCSR.BIT.ADIE = 0;	//割り込み禁止
+	AD1.ADCSR.BIT.ADM = 0;	//シングルスキャン
 	AD1.ADCSR.BIT.CH = 0;	//AN4 CL
 	AD1.ADCSR.BIT.CH = 1;	//AN5 CR
 	AD1.ADCSR.BIT.CH = 2;	//AN6 L
