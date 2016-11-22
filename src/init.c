@@ -97,13 +97,32 @@ void initAD(void) {//AD変換の設定
 	AD1.ADCR.BIT.ADST = 0;	//ADC停止
 	AD1.ADCSR.BIT.ADCS = 0;	//サイクルスキャンしない
 	AD1.ADCSR.BIT.TRGE = 0;	//トリガイネーブル無効
-	AD1.ADCSR.BIT.CKSL = 0;	//
+	AD1.ADCSR.BIT.CKSL = 0;	//ADC時間
 	AD1.ADCSR.BIT.ADIE = 0;	//割り込み禁止
 	AD1.ADCSR.BIT.ADM = 0;	//シングルスキャン
 	AD1.ADCSR.BIT.CH = 0;	//AN4 CL
 	AD1.ADCSR.BIT.CH = 1;	//AN5 CR
 	AD1.ADCSR.BIT.CH = 2;	//AN6 L
 	AD1.ADCSR.BIT.CH = 3;	//AN7 R
+}
+
+void init_sci(void){
+
+	int baud = 38400/2;			//ビットレート38400bps
+	unsigned char tmp;
+
+	STB.CR3.BIT._SCI1 = 0;			//スタンバイ解除
+
+	PFC.PACRL1.BIT.PA3MD=1;		//シリアルポートを設定
+	PFC.PACRL2.BIT.PA4MD = 1;	//シリアルポートを設定
+	SCI1.SCSCR.BYTE=0x00;		//送受信割り込み禁止
+
+	SCI1.SCSMR.BYTE = 0;		/* ASYNC、8bit、Parity-NONE、Stop-1、Clk = tmp	*/
+	tmp = (unsigned char)(25000000/32/baud)-1;
+	SCI1.SCBRR = tmp;			//ビットレート設定
+	SCI1.SCSCR.BIT.TE=1;		//送信許可
+	SCI1.SCSCR.BIT.RE=1;		//受信許可
+
 }
 
 void init(){
